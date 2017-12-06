@@ -1,0 +1,48 @@
+{
+  "name": "test-jest-in-webstorm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "standard --fix src/**/*.js __tests__/**/*.js",
+    "build": "babel src -d lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "jest": true
+    }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "regenerator-runtime": "^0.11.0",
+    "standard": "^10.0.3"
+  }
+}
