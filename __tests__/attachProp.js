@@ -1,4 +1,4 @@
-import {attachProp} from '../src/attachOffer'
+import {attachProp} from '../src/attachProp'
 
 test('Expect to be attach offer', () => {
     const next = (req, res, next) => expect(req).toEqual(expect.objectContaining({offer: {value: true}}))
